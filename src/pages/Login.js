@@ -5,13 +5,10 @@ import ApiErrors from "components/forms/ApiErrors";
 import { withAuth } from "providers/AuthProvider";
 
 class Login extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      shouldRedirect: false,
-      errors: [],
-    };
-  }
+  stete = {
+    shouldRedirect: false,
+    errors: [],
+  };
 
   signIn = (loginData) => {
     this.props.auth
